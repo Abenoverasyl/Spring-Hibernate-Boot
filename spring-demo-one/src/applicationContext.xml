@@ -12,7 +12,7 @@
 	
 	
 	<bean id="myCoach" 
-		class="com.love2code.springdemo.TrackCoach">
+		class="com.love2code.springdemo.BaseballCoach">
 	</bean>
 	
 </beans>
