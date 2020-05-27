@@ -12,7 +12,7 @@ public class HelloSpringApp {
 		
 		System.out.println(theCoach.getDailyWorkout());
 		
-		context.close();
+		context.close(); 
 	}
 
 }
