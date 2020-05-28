@@ -10,9 +10,18 @@
    http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
    http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 	
+	<!-- Define your beans here -->
+	
+	<!-- Define the dependency -->
+	
+	<bean id="myFortune"
+		class="com.love2code.springdemo.HappyFortuneService"></bean>
 	
 	<bean id="myCoach" 
 		class="com.love2code.springdemo.BaseballCoach">
+		
+		<!-- Set up the constructor injection -->
+		<constructor-arg ref="myFortune" />
 	</bean>
 	
 </beans>
