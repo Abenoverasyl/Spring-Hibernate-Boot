@@ -17,6 +17,19 @@ public class BeanScopeDemoApp {
 		Coach theCoach = context.getBean("myCoach", Coach.class);
 		
 		Coach alphaCoach = context.getBean("myCoach", Coach.class);
+		
+//		check if they are the same
+		boolean result = (theCoach == alphaCoach);
+		
+//		print out the result
+		System.out.println("\nPrinting the Same object: " + result);
+		
+		System.out.println("\nMemory loaction for theCoach: " + theCoach);
+		
+		System.out.println("\nMemory loaction for theCoach: " + alphaCoach + "\n");
+		
+//		close the context
+		context.close();
 	}
 
 }

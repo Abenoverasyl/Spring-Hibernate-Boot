@@ -20,7 +20,8 @@
 		class="com.love2code.springdemo.HappyFortuneService"></bean>
 	
 	<bean id="myCoach" 
-		class="com.love2code.springdemo.TrackCoach">
+		class="com.love2code.springdemo.TrackCoach"
+		scope="prototype">
 		
 		<!-- Set up the constructor injection -->
 		<constructor-arg ref="myFortuneService" />
